@@ -2,7 +2,11 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "uca-starter-python",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postAttachCommand": {
+		"reload python main.py": "reload python main.py"
+	},
 	"customizations": {
 		"codespaces": {
 		  "openFiles": [
