@@ -4,7 +4,8 @@ from uniconnapps import connector
 
 #START Sample Config - Replace with your own
 raise Exception(
-    "You need to replace uca_client with your config, head to https://platform.uniconnapps.com"
+    """Could not find a valid config in your app. Please get it from https://platform.uniconnapps.com 
+    Replace uca_client with your’s app config then remove the exception."""
     )
 uca_client = connector.UcaClient(
   connector_endpoint="uca://xxxxxxx.xxx",
